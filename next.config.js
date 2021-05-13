@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const withPWA = require('next-pwa');
+// const withPWA = require('next-pwa');
 // const withBundleAnalyzer = require('@next/bundle-analyzer')({
 //   enabled: process.env.ANALYZE === 'true',
 // });
@@ -9,7 +9,7 @@ const withCSS = require('@zeit/next-css');
 // publicly available on the servers, only to the error reporting
 // const withSourceMaps = require('@zeit/next-source-maps')();
 
-module.exports = withCSS(withPWA({
+module.exports = withCSS({
   poweredByHeader: false,
   cssModules: true,
   target: 'serverless',
@@ -32,4 +32,4 @@ module.exports = withCSS(withPWA({
     });
     return config;
   },
-}));
+});
