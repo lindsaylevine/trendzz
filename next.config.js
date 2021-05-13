@@ -10,18 +10,18 @@
 // const withSourceMaps = require('@zeit/next-source-maps')();
 
 module.exports = {
-  poweredByHeader: false,
-  cssModules: true,
+  // poweredByHeader: false,
+  // cssModules: true,
   target: 'serverless',
-  cssLoaderOptions: {
-    // typings-for-css-modules-loader config here
-    namedExport: true,
-  },
+  // cssLoaderOptions: {
+  //   // typings-for-css-modules-loader config here
+  //   namedExport: true,
+  // },
   tsCssModules: true,
-  pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV !== 'production',
-  },
+  // pwa: {
+  //   dest: 'public',
+  //   disable: process.env.NODE_ENV !== 'production',
+  // },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.svg$/,
