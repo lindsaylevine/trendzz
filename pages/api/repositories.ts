@@ -8,5 +8,4 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
   /*const response = await fetchRepositories({ language, since });*/
   const response = { hello: "world" };
   res.json(response);
-  res.end();
 };
