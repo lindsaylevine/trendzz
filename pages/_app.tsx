@@ -6,14 +6,13 @@ import App from 'next/app';
 class MyApp extends App {
   public render() {
     const {
-      Component, pageProps, err,
+      Component, pageProps
     } = this.props;
 
     return (
       <>
         <Component
           {...pageProps}
-          err={err}
         />
       </>
     );
