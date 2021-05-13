@@ -8,7 +8,7 @@
 
 # Trendzz
 
-Github trending PWA
+Github trending PWA 
 
 ## Live website
 
